@@ -10,8 +10,7 @@ const products = [
     description: 'Experience pure audio with these advanced wireless noise-cancelling headphones. They feature industry-leading noise cancellation and up to 30 hours of battery life. Perfect for travel, work, and relaxation.',
     shortDescription: 'Premium wireless headphones with active noise cancellation.',
     images: [
-      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80',
-      'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80'
+      '/images/products/wireless_headphones.jpg'
     ],
     category: 'Electronics',
     subcategory: 'Audio',
@@ -133,7 +132,7 @@ const products = [
     description: 'A timeless classic denim jacket made with premium cotton. Perfect for layering in any season and incredibly durable.',
     shortDescription: 'Premium cotton denim jacket.',
     images: [
-      'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=600&q=80'
+      '/images/products/denim_jacket.jpg'
     ],
     category: 'Fashion',
     subcategory: 'Outerwear',
@@ -255,7 +254,7 @@ const products = [
     description: 'Set of 4 artisan ceramic coffee mugs. Handcrafted with a beautiful speckled glaze finish. Microwave and dishwasher safe.',
     shortDescription: 'Artisan ceramic mug set of 4.',
     images: [
-      'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&q=80'
+      '/images/products/ceramic_mug.jpg'
     ],
     category: 'Home & Living',
     subcategory: 'Kitchen',
