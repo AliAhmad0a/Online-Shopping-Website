@@ -29,7 +29,7 @@ export default function CartItem({ item }) {
     <div className="flex flex-col sm:flex-row items-center gap-4 py-4 border-b border-gray-200 dark:border-gray-700">
       <Link to={`/products/${item.slug}`} className="flex-shrink-0">
         <img
-          src={item.image}
+          src={item.images?.[0] || item.image}
           alt={item.name}
           className="w-20 h-20 object-cover rounded-md bg-gray-100"
         />

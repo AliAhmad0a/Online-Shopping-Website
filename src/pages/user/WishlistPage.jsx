@@ -45,8 +45,8 @@ const WishlistPage = () => {
             <div key={product.id} className="card group relative">
               <Link to={`/product/${product.slug}`} className="block relative overflow-hidden aspect-[4/3] rounded-t-2xl">
                 <img 
-                  src={product.image} 
-                  alt={product.name}
+                  src={product.images?.[0] || product.image} 
+                  alt={product.name} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </Link>

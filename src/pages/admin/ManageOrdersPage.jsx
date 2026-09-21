@@ -83,7 +83,7 @@ const ManageOrdersPage = () => {
         <div className="flex items-center gap-2">
           <div className="flex -space-x-2">
             {val.slice(0, 3).map((item, idx) => (
-              <img key={idx} src={item.image} alt="item" className="w-8 h-8 rounded-full border-2 border-white dark:border-gray-900 object-cover bg-gray-100" />
+              <img key={idx} src={item.images?.[0] || item.image} alt="item" className="w-8 h-8 rounded-full border-2 border-white dark:border-gray-900 object-cover bg-gray-100" />
             ))}
           </div>
           <span className="text-xs text-gray-500">{val.length} items</span>
@@ -201,7 +201,7 @@ const ManageOrdersPage = () => {
                   <div className="divide-y divide-gray-100 dark:divide-gray-800">
                     {selectedOrder.items.map((item, idx) => (
                       <div key={idx} className="py-3 flex gap-4">
-                        <img src={item.image} alt={item.name} className="w-16 h-16 rounded-lg object-cover bg-gray-50" />
+                        <img src={item.images?.[0] || item.image} alt={item.name} className="w-16 h-16 rounded-lg object-cover bg-gray-50" />
                         <div className="flex-1">
                           <p className="font-medium text-gray-900 dark:text-white">{item.name}</p>
                           <p className="text-sm text-gray-500">Qty: {item.quantity} × {formatPrice(item.price)}</p>
